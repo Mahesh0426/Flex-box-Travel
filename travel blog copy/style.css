@@ -1,0 +1,177 @@
+:root {
+  --box-shadow: -5px 5px 10px 5px rgba(128, 128, 128, 0.888);
+  --primary-color: white;
+}
+body {
+  margin: 0;
+}
+
+/* can be given one single class name and use multiple class in html
+ */
+.header-container,
+.nav-container,
+.logo,
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-container,
+.nav-container {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.header-container {
+  /* border: 1px solid black; */
+  background-color: #ffaf87;
+}
+.nav-container {
+  /* border: 1px solid black; */
+  background-color: #ff8e72;
+}
+.nav-items {
+  display: flex;
+  gap: 12px;
+}
+.nav-items li {
+  list-style: none;
+}
+.nav-items li:hover {
+  color: red;
+  cursor: pointer;
+}
+.logo {
+  border: 2px dashed black;
+  justify-content: center;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: var(--primary-color);
+}
+/* hero section */
+.hero-section {
+  background: url(./image/hero.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 60vh;
+  /* display: flex; */
+  justify-content: center;
+  /* align-items: center; */
+}
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.788);
+  color: var(--primary-color);
+  padding: 32px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* latest post */
+.latest-post-container {
+  padding: 12px;
+}
+.card-container,
+.blog-card {
+  display: flex;
+  gap: 12px;
+}
+.card-container {
+  /* display: flex;
+  gap: 12px; */
+  width: 100%;
+}
+.blog-container {
+  flex: 2;
+}
+.filter-container {
+  flex: 1;
+}
+.blog-card,
+.read-more-btn,
+.card-by-country,
+.card-by-date {
+  box-shadow: var(--box-shadow);
+}
+.blog-card {
+  border-radius: 12px;
+  /* box-shadow: var(--box-shadow); */
+  /* display: flex; */
+  align-items: center;
+  /* gap: 12px; */
+  padding: 12px;
+  margin-bottom: 24px;
+}
+.card-image {
+  height: 150px;
+  width: 150px;
+  border-radius: 12px;
+}
+.read-more-btn {
+  /* box-shadow: var(--box-shadow); */
+  border-radius: 4px;
+  background-color: aqua;
+  cursor: pointer;
+  float: right;
+  height: 32px;
+  border: none;
+}
+.card-by-country,
+.card-by-date {
+  padding: 8px;
+  margin: 12px;
+  border-radius: 4px;
+}
+.card-by-country {
+  background-color: rgb(237, 104, 104);
+  /* box-shadow: var(--box-shadow); */
+  /* border-radius: 4px;
+  padding: 8px;
+  margin: 12px; */
+}
+.card-by-date {
+  background-color: rgb(207, 207, 118);
+  /* box-shadow: var(--box-shadow); */
+  /* border-radius: 4px;
+  padding: 8px;
+  margin: 12px; */
+}
+
+/* recommendation */
+.recommendation-section {
+  background-color: rgb(216, 106, 106);
+  padding: 40px;
+}
+.recommendation-container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 12px;
+}
+.recommendation-card {
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  height: 385px;
+  width: 400px;
+  background-color: var(--primary-color);
+}
+.recommendation-image {
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.recommendation-card-content {
+  padding: 12px;
+  text-align: center;
+}
+/* susbriction */
+.susbriction-form input {
+  height: 12px;
+  padding: 12px;
+  margin: 4px;
+}
+/* footer */
+footer {
+  text-align: center;
+  padding: 24px;
+  background-color: rgba(0, 0, 0, 0.6888);
+}

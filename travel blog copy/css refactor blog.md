@@ -1,0 +1,4 @@
+# CSS Refactor code
+
+p I created CSS pseudo class bu using :root elements. inside root element I used --box-shadow and --primary color . They allow me to store value which I can reuse that value as much as I can through out the code.I combined clases (.header-container, .nav-container, .logo, and .hero-section) which have same properties such as display: flex, justify-content: space-between; ,align-items: center;. they allow to use flexbox layout to control the child element inside the container. By Combining these classes i donot need to repeat the flex properties again and agin.
+In my code refactoring process, I observed that both the .header-container and .nav-container classes had the same padding pattern applied for padding-left and padding-right. To enhance code readability and reduce redundancy, I combined these styles into a single .
